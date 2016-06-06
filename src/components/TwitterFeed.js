@@ -7,8 +7,11 @@ const TwitterFeed = props => {
     let handleRetweet = (event) => {
       let div = event.target.parentElement;
 
-      if (tweet.retweeted) {
-        alert('already retweeted');
+      if (div.className.includes('green-text')) {
+        let undoMessage = confirm('un-retweet?')
+        if (undoMessage) {
+          div.className = div.className.replace(' green-text', '')
+        }
       } else {
         let message = confirm('retweet?');
         if (message) {
@@ -20,8 +23,11 @@ const TwitterFeed = props => {
     let handleFavorite = (event) => {
       let div = event.target.parentElement;
 
-      if (tweet.favorited) {
-        alert('already liked');
+      if (div.className.includes('red-text')) {
+        let undoMessage = confirm('unlike?')
+        if (undoMessage) {
+          div.className = div.className.replace(' red-text', '')
+        }
       } else {
         let message = confirm('like?');
         if (message) {
