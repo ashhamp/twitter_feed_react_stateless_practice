@@ -1,0 +1,54 @@
+/* YOUR STYLING HERE */
+@import 'colors';
+
+$black: #000000;
+
+
+
+.green-text {
+  color: $green;
+}
+.greytext {
+  color: $grey;
+}
+
+.icon-margin {
+  margin-right: 7px;
+}
+
+.img-div {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.img-margin {
+  height: 100%;
+  padding: 0px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.margin-name {
+  margin-right: 10px;
+}
+
+.red-text {
+  color: $red;
+}
+
+.tweet-border {
+  border: solid 2px $black;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.tweet-icons {
+  color: $grey;
+  margin-top: 5px;
+}
+
+.tweet-no-padding {
+  padding: 0;
+}
